@@ -13,7 +13,7 @@ USER root
 RUN set -x \
     && apt-get update \
     && apt-get install -my gnupg curl \
-    && curl -sL https://deb.nodesource.com/setup_${NODE_MAJOR_VERSION}.x | bash - \
+    && curl -sL "https://deb.nodesource.com/setup_${NODE_MAJOR_VERSION}.x" | bash - \
     && apt-get install -y nodejs \
     && npm install -g npm@latest \
     && node --version \
