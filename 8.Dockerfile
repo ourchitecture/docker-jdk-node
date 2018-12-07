@@ -1,6 +1,4 @@
-ARG IMAGE_TAG="8-jdk"
-
-FROM openjdk:${IMAGE_TAG}
+FROM openjdk:8-jdk
 
 LABEL organization="Ourchitecture"
 LABEL license="MIT"
